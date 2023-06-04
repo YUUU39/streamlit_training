@@ -151,7 +151,7 @@ expander2.write("日曜日と祝日がお休みです")
 
 #read_excel
 st.markdown(" ### 月別売上")
-sales_data=pd.read_excel("./data\sales_data.xlsx",engine="openpyxl")
+sales_data=pd.read_excel("./data/sales_data.xlsx",engine="openpyxl")
 sales_data
 
 #問題１７　読み込んだexcelのデータをグラフにしてみましょう。
@@ -168,7 +168,7 @@ st.bar_chart(sales_data,x="営業月")
 #checkbox with multiselect
 if st.checkbox("マルチセレクトを使ってグラフを比較する"):
     #エクセルデータ読み込み
-    sales_data=pd.read_excel("./data\sales_data.xlsx",engine="openpyxl")
+    sales_data=pd.read_excel("./data/sales_data.xlsx",engine="openpyxl")
     #multiselect
     selected_fruits=st.multiselect(
         "果物を選んでください",
